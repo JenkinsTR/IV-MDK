@@ -42,6 +42,8 @@ IV-MDK (GTAIV Modding Development Kit) is a comprehensive collection of tools an
 
 - **OpenFormatObjConverter** by svenar-nl with edits by JMDigital - [Link to Tool](https://github.com/svenar-nl/OpenFormatObjConverter)
   - This tool facilitates the conversion of models from OpenFormats to the OBJ format. OpenFormats is an open source format for storing 3D models exported from OpenIV. The OpenFormatObjConverter allows users to convert these models into the more widely supported OBJ format, making them compatible with various modeling and rendering software.
+- **JMD-MTL-MissingTextures-Finder v1.3** by JMDigital - [Link to Tool](https://github.com/JenkinsTR/JMD-MTL-MissingTextures-Finder)
+  - This tool helps to find missing textures in MTL files used in GTA IV modding. It scans the specified MTL directory and its subfolders, identifies missing textures referenced in the MTL files, and provides information about the missing textures. Additionally, it can update the MTL files with new texture paths and copy the textures to a chosen folder if desired. View the Github page for more information.
 
 ### Textures
 
