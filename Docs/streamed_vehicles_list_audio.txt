@@ -1,0 +1,131 @@
+Sound File          Game Name           Vehicle Name
+4_CYLINDER_SALOON_1 Fortune             FORTUNE
+4_CYLINDER_SALOON_1 Ingot               INGOT
+4_CYLINDER_SALOON_1 Lokus               LOKUS
+4_CYLINDER_SALOON_1 Solair              SOLAIR
+4_CYLINDER_SALOON_1 Stratum             STRATUM
+4_CYLINDER_SPORT_1  Blista Compact      BLISTA
+4_CYLINDER_SPORT_1  Futo                FUTO
+4_CYLINDER_SPORT_1  Futo GT             FUTO
+4_CYLINDER_SPORT_1  Hakumai             HAKUMAI
+BOX_VAN_1           Benson              BENSON
+BOX_VAN_1           Enforcer            NSTOCK
+BOX_VAN_1           Mule                MULE
+BOX_VAN_1           Police Stockade     PSTOCK
+BOX_VAN_1           Securicar           STOCK
+BOX_VAN_1           Yankee              YANKEE
+BOX_VAN_3           Burrito             BURRITO
+BOX_VAN_3           Burrito2            BURRITO2
+BOX_VAN_3           Moonbeam            MOONB
+BOX_VAN_3           Pony                PONY
+BOX_VAN_3           Speedo              SPEEDO
+BOX_VAN_3           Steed               STEED
+FAST_1              Feltzer             FELTZER
+FAST_1              Pinnacle            PINCLE
+FAST_2              FIB Buffalo         FBI
+FAST_2              Intruder            INTRUD
+FAST_2              Schafter            SCHAFTER
+FAST_3              Coquette            COQUETTE
+FAST_4              Banshee             BANSHEE
+FORK                Forklift            FORKLIFT
+GOLF_CART           Airtug              AIRTUG
+HATCHBACK_1         Cabby               CABBY
+HATCHBACK_1         Minivan             MINVAN
+HATCHBACK_2         FlyUS Perennial     PEREN2
+HATCHBACK_2         Habanero            HABANRO
+HATCHBACK_2         Landstalker         LANSTALK
+HATCHBACK_2         Perennial           PEREN
+HATCHBACK_2         Rebla               REBLA
+HYBRID              Dilettante          DILANTE
+LUXURY_CAR_1        Feroci              FEROCI
+LUXURY_CAR_1        Feroci VIP          FEROCI
+LUXURY_CAR_1        FlyUS Feroci        FEROCI2
+LUXURY_CAR_1        Huntley Sport       HUNT
+LUXURY_CAR_1        Oracle              ORACLE
+LUXURY_CAR_1        Presidente          PRES
+LUXURY_CAR_1        Primo               PRIMO
+LUXURY_CAR_1        Vincent             VINCENT
+MUSCLE_CAR_1        Cavalcade           CAVCADE
+MUSCLE_CAR_1        Cavalcade FXT       FXT
+MUSCLE_CAR_1        Contender (E109)    CONTENDER
+MUSCLE_CAR_2        NOOSE Patriot       POLPAT
+MUSCLE_CAR_2        Patriot             PATRIOT
+MUSCLE_CAR_2        Peyote              PEYOTE
+MUSCLE_CAR_2        Voodoo              VOODOO
+MUSCLE_CAR_3        Dukes               DUKES
+MUSCLE_CAR_3        Sabre GT            SABREGT
+MUSCLE_CAR_3        Stallion            STALION
+MUSCLE_CAR_3        Vigero              VIGERO
+MUSCLE_CAR_3        Vigero (Rusty)      VIGERO2
+MUSCLE_CAR_4        Faction             FACTION
+MUSCLE_CAR_4        Ruiner              RUINER
+MUSCLE_CAR_4        Sabre               SABRE
+MUSCLE_CAR_4        Sabre (Rusty)       SABRE2
+RALLY_RACER         Chavos              CHAV
+RALLY_RACER         DF8-90              DF8
+RALLY_RACER         Sentinel            SENTINEL
+RALLY_RACER         Sentinel XS         SENTINEL
+RALLY_RACER         Sultan              SULTAN
+RALLY_RACER         Sultan RS           SULTANRS
+REGULAR_SALOON_1    Marbelle            MARBELLA
+REGULAR_SALOON_1    Willard             WILARD
+RIG_1               Bus                 BUS
+RIG_2               Flatbed             FLATBED
+RIG_2               Phantom             PHANTOM
+RIG_3               Biff                BIFF
+RIG_3               Firetruck           FIRETRUK
+RIG_3               Packer              PACKER
+RIG_3               Ripley              RIPLEY
+RIG_3               Trashmaster         TRUSH
+SUPERCAR_1          Turismo             TURISMO
+SUPERCAR_2          Comet               COMET
+SUPERCAR_2          Infernus            INFERNUS
+SUPERCAR_2          Super GT            SUPER
+V8_LUXURY_1         Admiral             ADMIRAL
+V8_LUXURY_1         Cognoscenti         COGNONTI
+V8_LUXURY_1         PMP 600             PMP600
+V8_LUXURY_1         Romero              ROMERO
+V8_LUXURY_1         Stretch             STRETCH
+V8_LUXURY_1         Washington          WASHINGTON
+V8_WAGON            Ambulance           AMBULAN
+V8_WAGON            Boxville            BOXVLE
+V8_WAGON            Mr. Tasty           MRTASTY
+V_STYLE_1           Bobcat              BOBCAT
+V_STYLE_1           Rancher             RANCHER
+V_STYLE_2           Buccaneer           BUCCNEER
+V_STYLE_2           Merit               MERIT
+V_STYLE_2           Police Patrol       POLICE2
+V_STYLE_2           Taxi (Merit)        TAXI2
+V_STYLE_2           Virgo               VIRGO
+V_STYLE_3           Emperor             EMPEROR
+V_STYLE_3           Emperor (Rusty)     EMPEROR2
+V_STYLE_3           NOOSE Cruiser       NOOSE
+V_STYLE_3           Police Cruiser      POLICE
+V_STYLE_3           Taxi                TAXI
+V_STYLE_4           Esperanto           ESPERNTO
+V_STYLE_4           Manana              MANANA
+V_STYLE_4           Premier             PREMIER
+V_STYLE_4           Roman's Taxi        ALBANY
+V_STYLE_4           Uranus              URANUS
+
+1000_RACEBIKE		NRG 900				NRG900		
+600_STREETBIKE		PCJ 600				PCJ			
+CHOPPER_1			Freeway				BOBBER		
+CHOPPER_1			Zombie				ZOMB		
+CHOPPER_2			Hellfury			HELLFURY	
+MOPED				Faggio				FAGGIO		
+SANCHEZ				Sanchez				SANCHEZ		
+
+DINGHY				Dinghy				DINGHY		
+MARQUIS_SAILBOAT	Marquis				MARQUI		
+SPEEDBOAT			Jetmax				JETMAX		
+SPEEDBOAT			Police Predator		PREDTOR		
+SPEEDBOAT			Squalo				SQUALO		
+SPEEDBOAT			Tropic				TROPIC		
+TRAWLER				Reefer				REEFER		
+TRAWLER				Tug					RUSTBOAT	
+
+HELICOPTER			Annihilator			ANNHIL		
+HELICOPTER			Helitours Maverick	TOURMAV		
+HELICOPTER			Maverick			MAVERICK	
+HELICOPTER			Police Maverick		POLMAV		

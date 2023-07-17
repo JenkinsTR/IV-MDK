@@ -1,0 +1,100 @@
+============================================================================================
+
+No flag ( - )			- If extras exists, they spawn randomly in single or none. Never together.
+avoidturns 				- if the car is big, like a bus, it will avoid sharp turns
+bangerexhaustfx 		- Dirty smoke
+big 					- The car is big.
+bootinfront 			- Car has a boot at the front, e.g Comet/Porsche
+delivery 				- it's a delivery car so only spawns in the daytime.
+ext_all 				- spawns with all extras.
+ext_conv 				- Convertable, this means that the driver can jump in the car without opening door.
+ext_gang 				- spawns all extras simultaneously that are named extra_5 and above.
+ext_rare 				- spawning with extras will be rare.
+ext_requi* 				- extra required, will always spawn with an extra (if model file has them of course)
+ext_script 				- has extra decorations on it which is activated with an external script. Cognoscenti uses this to spawn the wedding tape on the bonnet. (Also useful with ELS, AI cars don't drive around with lights randomly on)
+ext_strong 				- This flag means that the extras won't come off easily when you crash the vehicle. Without this, they come off in light crashes.
+ext_sunroof 			- switches the component at the top.
+ext_taxi** 				- will cycle through extras named extra_5 and above
+isvan 					- vehicle has van style rear doors.
+livery 					- If the car has multiple different textures, it will randomize between them.
+liveryextra 			- Unknown. Possibly when a model extra_* has multiple different textures.
+noambocc 				- No ambient occlusion. Unused, possibly not working.
+noboot 					- you won't see the car parked at the side of the road with a ped looking inside the trunk/hood.
+onlyduringofficehours 	- the car will only spawn during office hours and not at night.
+onlyonhighways 			- Unused. Spawn only on .NOD path, who uses 'Highway' Flag in 3th section of Flags.
+smallworker 			- Unknown effect. Only used in the forklift.
+sports 					- Unknown effect. Used for Comet, SultanRS, Feltzer, Infernus, etc. Possibly required for Race events. This flag also causes more sports-flagged cars to spawn around you when driving one.
+tallship 				- Used for boats that have tall collision geometry. Sailing boats, e.g Marquis
+truckenginefx 			- truck engine.
+truckexhaustfx 			- more dust when changing gears .
+truckfirefx 			- Larger flames when vehicle catches fire.
+truckfx 				- Unknown effect. Unused.
+
+*	when ext_requi is used, it will cycle through all the extras one at a time (or randomly) regardless of node or name.
+but when coupled with ext_gang, it will only cycle through extras 0-4 when ext_gang is not active on the spawned vehicle
+(the vehicle either spawns utilizing ext_requi or ext_gang, never both)
+
+**	when ext_taxi is used in conjunction with ext_requi, ext_taxi will cycle through extras 5 to 9 as ext_requi cycles through extras 0 to 4
+so in other words, it will have any 2 randomly generated extras active at once (0 to 4 and 5 to 9)
+
+============================================================================================
+
+Notes on the above:
+
+ext_gang:
+E.g model with extras 1,3,7,8.
+Spawns only 1 or 3 in random or none, never spawns 7&8.
+Ignores 5 and above.
+
+ext_taxi:
+E.g model with extras 1,7. 
+It always spawns 7 and sometimes in random 1. Never with no extras
+
+Model with extras 7,8, it always spawned one of them, never together, never none.
+So conclusion must be always spawns one of 5 and above and in random single one or none of 0-4.
+So thats good if you have two different bumpers which can't overlay on top of each other and single one of them always have to be there.
+You'll name them in ZM anything 5-9 and any other which you want in random name in ZM 0-4.
+
+ext_requi:
+E.g model with only extras 7 & 8 it behaves like no flag (-), spawns in random only one or none.
+
+ext_all:
+when extras 7 & 8 it just does them all always. (didn't test 0-4 yet)
+
+ext_gang+ext_requi:
+does nothing to extras 7 & 8, nothing ever spawns (didn't test 0-4 yet)
+
+ext_taxi+ext_requi:
+same as ext_taxi alone for extras 5-9
+
+Thats where i stopped so far, hopefully it helps.  
+
+Unfortunately it doesn't seem to be possible to have them all randomly on or none, but always together. 
+Because one on trunk and one on bodyshell, they can't just be attached together. May not be possible.
+
+============================================================================================
+GROUPS:
+
+In order for "groups" of extras to be rotated, they need to be parented together in the model hierachy:
+
+Rotating between a tow truck and a tanker truck:
+E.g: extra_2 and extra_3 could be extras relating to the tanker portion, and extra_6 and extra_7 could be extras relating to the tow portion.
+They intern can be children of extra_1 and extra_5, and use ext_requi and ext_gang to cycle through the variations of each, but will safely never spawn both variants together.
+
+Example hierachy for the above:
+-chassis (whole vehicle)
+	--extra_1 (Tanker portion)
+		---extra_2 (e.g the Tank itself)
+		---extra_3 (e.g horns on the roof of the cab)
+	--extra_5 (Tow portion)
+		---extra_6 (e.g the Tow arm itself)
+		---extra_7 (e.g toolbox, safety gear, etc)
+
+The above should use a model that has a "complete" truck without extra_1 or extra_5 enabled. E.g a flatbed, and those extras sit ontop of the flatbed. 
+This is incase extra_2,3, 6 or 7 spawn without their parent 1 or 5.
+
+When the game spawns the truck using ext_requi, it will likely spawn the Tanker with it's extras. 
+
+When the game spawns the truck using ext_gang, it will likely spawn the Tow variation with it's extras. 
+
+There is a chance that rotating the sub-extras is not possible.

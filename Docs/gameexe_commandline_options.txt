@@ -1,0 +1,58 @@
+Commandline Arguments
+Usage: GTAlV.exe [options]
+Where [options] are one or more of:
+
+==== [Global] ====
+-adapter: Use the specified screen adapter number (zero-based)
+-disableimposters: Turn off the imposter rendering for vehicles
+-noBlockOnLostFocus: Don't block the window update when it loses focus.
+
+==== [AUDIO] ====
+-fullspecaudio: Force high-end CPU audio footprint
+-minspecaudio: Force Iow-end CPU audio footprint
+
+==== [GLOBAL] ====
+-benchmark: Determines if we run the benchmark immediately
+-safemode: Sets graphics setting to lowest setting
+
+==== [GRAPHICS] ====
+-forcehighqualitymirrors: Enable 64 bit mirrors
+-forcer2vb: force r2vb
+-frameLimit: number of frames to limit game to
+-framelockinwindow: Force framelock to work even in a window (works best with 60Hz monitor refresh)
+-fullscreen: Force fullscreen mode
+-gpucount: Lets you manually set the GPU count if query fails
+-height: Set height of main render window (default is 480)
+-managed: Use D3D runtime managed resources
+-nominimize: Disables the ability to restore the game from minimize and changing resolutions - Reduces System Memory Footprint
+-norestrictions: Do not limit graphics settings
+-noswapdelay-. Disable sleep delay before Present (disable fix for hard Present stalls)
+-novblank: Disable wait for vblank
+-refreshrate: Set refresh rate of main render window
+-stereo: Set game to support stereo rendering mode
+-unmanaged: Use application managed resources
+-width: Set width of main render window (default is 640)
+-windowed: Force windowed mode
+
+==== [INPUT] ====
+-usedirectinput: Allow DirectInput alongside Xlnput support.
+
+==== [MEMORY] ====
+-availablevidmem: Percentage of available video memory
+-memrestrict: Set the restriction the amount of available memory for managed resources
+-no_3GB: Disable 32bit OS with /3GB
+-nomemrestrict: Do not restrict the amount of available memory for managed resources
+-noprecache: Do not precache resources
+-percentvidmem: Percentage of video memory to make available to GTA
+-reserve: Amount of memory to set aside for other applications
+-reservedApp: Amount of memory to leave available within application space
+
+==== [QUALITY SETTINGS] ====
+-autoconfig: Automatically adjust quality setting to maintain desired framerate (15-120)
+-detailquality. Set detail distance (0-99)
+-renderquality. Set anisotropic filtering (0-4)
+-shadowdensity. Set the number of lights that cast shadows
+-shadowquality. Set the shadow quality (0-4)
+-texturequality. Set texture quality (0-2)
+-viewdistance: Set LOD view distance (0-99)
+-notimefix: Disable Time Fix

@@ -1,0 +1,33 @@
+BLUE:
+siren1
+siren3
+siren5
+siren7
+
+RED:
+siren2
+siren4
+siren6
+siren8
+
+police.wft hierarchy:
+
+-chassis
+--lightbar
+---siren8
+---siren7
+---siren6
+---siren5
+---siren4
+---siren3
+---siren2
+---siren1
+---misc_h
+----misch_h_L0
+
+fbi.wft hierarchy:
+-chassis
+--siren4
+--siren3
+--siren1
+--siren2
