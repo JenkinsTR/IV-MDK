@@ -61,19 +61,23 @@ IV-MDK (GTAIV Modding Development Kit) is a comprehensive collection of tools an
 
 - **convert_to_32khzWAV.bat** by JMDigital - [Link to File](Tools/Audio/convert_to_32khzWAV.bat)
   - This batch file is used for converting audio files to the 32kHz WAV format. It can be handy when preparing audio files for use in Andrew's Multichannel Audio Importer.
+  Through various testing I've found that it's almost a required step to convert audio to the 32kHz WAV format before injecting the file/s with AMAI. Otherwise you will experience weird audio glitches that will leave your ears bleeding.
 
 ### Misc Batch Files
 
 - **copy_dds.bat** by JMDigital - [Link to File](Tools/Misc/copy_dds.bat)
   - This batch file facilitates the copying of DDS (DirectDraw Surface) texture files. It simplifies the process of copying these files to desired locations.
+  The batch can be useful for isolating .dds files from a folder/s you've extracted using OpenIV or SparkIV.
 - **copy_ofiv.bat** by JMDigital - [Link to File](Tools/Misc/copy_ofiv.bat)
   - This batch file is used for copying OpenFormats files. It helps manage OpenFormats files during the modding process.
 - **del_openFormats.bat** by JMDigital - [Link to File](Tools/Misc/del_openFormats.bat)
   - This batch file assists in deleting OpenFormats files. It provides a streamlined approach for removing OpenFormats files when necessary.
+  If you've used the Save Content option in OpenIV with models selected alongside .wtd files and don't want to keep the openFormat meshes, use this file to clean a directory of openFormat files.
 - **list_unique_extensions.bat** by JMDigital - [Link to File](Tools/Misc/list_unique_extensions.bat)
   - This batch file lists the unique file extensions found within the game files. It can help modders identify the file formats used in GTA IV and understand the types of files they may encounter during modding.
+  It was useful in the creation of the copy_ofiv.bat and del_openFormats.bat scripts but you might find some other use for it.
 
-#### IVTweaker AutoUpdate Vehicle Budget
+##### IVTweaker AutoUpdate Vehicle Budget
 
 - **update_budget.bat** by JMDigital - [Link to File](<Tools/Misc/IVTweaker AutoUpdate Vehicle Budget/update_budget.bat>)
 - **UpdateVehicleBudget.ps1** by JMDigital - [Link to File](<Tools/Misc/IVTweaker AutoUpdate Vehicle Budget/UpdateVehicleBudget.ps1>)
@@ -87,6 +91,8 @@ IV-MDK (GTAIV Modding Development Kit) is a comprehensive collection of tools an
   - **UpdateVehicleBudget.ps1**: This PowerShell script updates the VehicleBudget value in the IVTweaker.ini file by calculating the sizes of the vehicles.img files and modifying the INI file accordingly.
 
   To use the tool, run the `update_budget.bat` file, and it will automatically update the VehicleBudget value in the IVTweaker.ini file based on the sizes of the vehicles.img files. The updated VehicleBudget value will be displayed after the process is completed.
+  
+  This tool is useful for the outputs of OpenFormatObjConverter that doesn't resolve textures in other folders that aren't directly part of the .odr export. Make sure you check the resulting .mtl files.
 
 ### Models Batch Files
 
@@ -102,12 +108,12 @@ IV-MDK (GTAIV Modding Development Kit) is a comprehensive collection of tools an
 
 The following documentation files are available in the repository:
 
-- **1007_list_of_different_files_to_CE.txt** by JMDigital - A list of files that are different in 1.0.0.7 Downgrade compared to the Complete Edition. [Link to File](Docs/1007_list_of_different_files_to_CE.txt)
-- **gameexe_commandline_options.txt** - A list of the game's exe command line options. [Link to File](Docs/gameexe_commandline_options.txt)
-- **model_hashes.txt** - A list of the game's model hashes. [Link to File](Docs/model_hashes.txt)
-- **streamed_vehicles_list_audio.txt** by JMDigital - A list of the game's vehicle streamed audio names and their categories. [Link to File](Docs/streamed_vehicles_list_audio.txt)
-- **veh_extras.txt** - A detailed list with explanations of the game's vehicle extras. [Link to File](Docs/veh_extras.txt)
-- **zmodeler_siren_dummies.txt** by JMDigital - Contains hierarchy information for siren dummies in the "police.wft" and "fbi.wft" files. [Link to File](Docs/zmodeler_siren_dummies.txt)
+- **1007_list_of_different_files_to_CE.txt** by JMDigital - A list of files that are different in 1.0.0.7 Downgrade compared to the Complete Edition. This was useful for isolating the files that were changed during the downgrade. [Link to File](Docs/1007_list_of_different_files_to_CE.txt)
+- **gameexe_commandline_options.txt** - A list of the game's exe command line options. This can help when constructing a commandline.txt file in the GTAIV installation folder. [Link to File](Docs/gameexe_commandline_options.txt)
+- **model_hashes.txt** - A list of the game's model hashes. This is useful for IDE files that define models in the game world. [Link to File](Docs/model_hashes.txt)
+- **streamed_vehicles_list_audio.txt** by JMDigital - A list of the game's vehicle streamed audio names and their categories. When replacing or editing vehicle audio, this file can help pin down what vehicles use which different audio .ivaud files. [Link to File](Docs/streamed_vehicles_list_audio.txt)
+- **veh_extras.txt** - A detailed list with explanations of the game's vehicle extras. This document is a compilation from different sources and internal testing. Not 100% complete but close enough to get you started. [Link to File](Docs/veh_extras.txt)
+- **zmodeler_siren_dummies.txt** by JMDigital - Contains hierarchy information for siren dummies in the "police.wft" and "fbi.wft" files. This is useful when placing Non-ELS dummy objects in Zmodeler and you need to know which dummies control which corona colors. [Link to File](Docs/zmodeler_siren_dummies.txt)
 
 Please refer to the individual documentation files for more information.
 
