@@ -75,8 +75,8 @@ IV-MDK (GTAIV Modding Development Kit) is a comprehensive collection of tools an
 
 #### IVTweaker AutoUpdate Vehicle Budget
 
-- **update_budget.bat** by JMDigital - [Link to File]('Tools/Misc/IVTweaker AutoUpdate Vehicle Budget/update_budget.bat')
-- **UpdateVehicleBudget.ps1** by JMDigital - [Link to File]('Tools/Misc/IVTweaker AutoUpdate Vehicle Budget/UpdateVehicleBudget.ps1')
+- **update_budget.bat** by JMDigital - [Link to File](<Tools/Misc/IVTweaker AutoUpdate Vehicle Budget/update_budget.bat>)
+- **UpdateVehicleBudget.ps1** by JMDigital - [Link to File](<Tools/Misc/IVTweaker AutoUpdate Vehicle Budget/UpdateVehicleBudget.ps1>)
 
   **Function: IVTweaker AutoUpdate Vehicle Budget**
 
