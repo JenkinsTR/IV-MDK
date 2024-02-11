@@ -1,5 +1,9 @@
 # IV-MDK (GTAIV Modding Development Kit)
 
+![GitHub](https://img.shields.io/github/license/JenkinsTR/IV-MDK)
+![GitHub last commit](https://img.shields.io/github/last-commit/JenkinsTR/IV-MDK)
+![GitHub stars](https://img.shields.io/github/stars/JenkinsTR/IV-MDK?style=social)
+
 IV-MDK (GTAIV Modding Development Kit) is a comprehensive collection of tools and documentation for modding and developing modifications for Grand Theft Auto IV (GTA IV). This repository provides various tools and resources that can be utilized to enhance and modify different aspects of the game.
 
 ## Table of Contents
